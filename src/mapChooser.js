@@ -1,0 +1,1 @@
+export default (locationName) => `${locationName || 'none'}.png`;

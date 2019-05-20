@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import Enzyme from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+import App from './containers/App';
 import * as serviceWorker from './serviceWorker';
+
+Enzyme.configure({ adapter: new Adapter() });
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
